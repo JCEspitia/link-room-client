@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const linksApi = axios.create({
-  baseURL: "http://localhost:8000/link-room/v1/links/",
+  baseURL: "https://link-room-api.vercel.app/link-room/v1/links/",
 });
 
 export const getAllLinks = () => linksApi.get("/");
